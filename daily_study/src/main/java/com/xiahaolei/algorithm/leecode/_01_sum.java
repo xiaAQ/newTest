@@ -1,4 +1,4 @@
-package com.xiahaolei.algorithm;
+package com.xiahaolei.algorithm.leecode;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -8,14 +8,10 @@ import java.util.Map;
 public class _01_sum {
     /**
      * 给定 nums = [2, 7, 11, 15], target = 9
-     * <p>
      * 因为 nums[0] + nums[1] = 2 + 7 = 9
      * 所以返回 [0, 1]
-     * <p>
-     * 来源：力扣（LeetCode）
      * 链接：https://leetcode-cn.com/problems/two-sum
-     * 复杂度 O(n)
-     * @param args
+     * 空间复杂度 O(n)
      */
     public static void main(String[] args) {
         int[] su ={2, 7, 11, 15};

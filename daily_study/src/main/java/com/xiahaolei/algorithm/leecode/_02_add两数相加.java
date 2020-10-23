@@ -1,4 +1,4 @@
-package com.xiahaolei.algorithm;
+package com.xiahaolei.algorithm.leecode;
 
 public class _02_add两数相加 {
     /**
