@@ -144,28 +144,16 @@ public class TestMd5 {
      */
 
     public static String getEncryptedPwd(String password)
-
             throws NoSuchAlgorithmException, UnsupportedEncodingException {
-
         //声明加密后的口令数组变量
-
         byte[] pwd = null;
-
         //随机数生成器
-
         SecureRandom random = new SecureRandom();
-
         //声明盐数组变量
-
         byte[] salt = new byte[SALT_LENGTH];
-
         //将随机数放入盐变量中
-
         random.nextBytes(salt);
-
-
         //声明消息摘要对象
-
         MessageDigest md = null;
 
         //创建消息摘要
