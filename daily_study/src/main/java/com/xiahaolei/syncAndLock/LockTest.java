@@ -21,24 +21,19 @@ public class LockTest {
 
     public static void main(String[] args) {
         LockTest lockTest = new LockTest();
-
         //线程1
         Thread t1 = new Thread(new Runnable() {
-
             @Override
             public void run() {
                 lockTest.method(Thread.currentThread());
             }
         }, "t1");
-
         Thread t2 = new Thread(new Runnable() {
-
             @Override
             public void run() {
                 lockTest.method(Thread.currentThread());
             }
         }, "t2");
-
         t1.start();
         t2.start();
     }
