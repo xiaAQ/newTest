@@ -21,7 +21,7 @@ public class MapTest {
         }).collect(Collectors.toList());
         System.out.println(collect);
         List<String> stringList = new ArrayList<>();
-        collect.stream().map(e->stringList.add(e));
+        collect.stream().map(e->stringList.add(e)).collect(Collectors.toList());
         System.out.println(stringList);
     }
 }

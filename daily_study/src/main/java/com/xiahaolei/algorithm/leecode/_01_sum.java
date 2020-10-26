@@ -20,6 +20,13 @@ public class _01_sum {
         Arrays.stream(ints).forEach(e -> System.out.print(e));
     }
 
+    /**
+     * 时间复杂度为O(n)
+     *
+     * @param nums
+     * @param target
+     * @return
+     */
     public static int[] twoSum(int[] nums, int target) {
         int[] res = new int[2];
         if (nums == null || nums.length == 0)
@@ -39,14 +46,21 @@ public class _01_sum {
         return res;
     }
 
+    /**
+     * 时间复杂度为 O(n~2)
+     *
+     * @param nums
+     * @param target
+     * @return
+     */
     public static int[] sum(int[] nums, int target) {
         int[] resp = new int[2];
         int length = nums.length;
         for (int i = 0; i < length; i++) {
             for (int j = 0; j < length; j++) {
                 if (nums[i] + nums[j] == target) {
-                    resp[0]=i;
-                    resp[1]=j;
+                    resp[0] = i;
+                    resp[1] = j;
                 }
             }
         }
