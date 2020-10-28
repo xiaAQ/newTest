@@ -16,8 +16,8 @@ public class _01_sum {
     public static void main(String[] args) {
         int[] su = {2, 7, 11, 15};
         int target = 9;
-        int[] ints = sum(su, target);
-        Arrays.stream(ints).forEach(e -> System.out.print(e));
+        int[] ints = twoSum(su, target);
+        Arrays.stream(ints).forEach(e -> System.out.println(e));
     }
 
     /**
@@ -47,7 +47,7 @@ public class _01_sum {
     }
 
     /**
-     * 时间复杂度为 O(n~2)
+     * 时间复杂度为 O(n~2)--》有问题
      *
      * @param nums
      * @param target
