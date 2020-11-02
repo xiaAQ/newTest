@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * Map是Stream的流的中间操作，不会对数据进行保存，如果没有进行终止操作的话，会导致数据出现问题
+ */
 public class MapTest {
     public static void main(String[] args) {
         List<String> list = new ArrayList<>();
