@@ -1,7 +1,5 @@
-package com.xiahaolei.md5;
+package com.xiahaolei.secret.md5;
 
-
-import org.junit.Test;
 
 import java.math.BigInteger;
 import java.security.MessageDigest;
