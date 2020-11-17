@@ -1,4 +1,4 @@
-package com.xiahaolei.utils;
+package com.xiahaolei.utils.date;
 
 import org.apache.commons.lang3.time.DateUtils;
 

@@ -1,4 +1,4 @@
-package com.xiahaolei.RSA;
+package com.xiahaolei.secret.RSA;
 
 import org.apache.commons.codec.binary.Base64;
 
