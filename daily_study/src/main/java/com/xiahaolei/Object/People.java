@@ -1,8 +1,14 @@
 package com.xiahaolei.Object;
 
-import java.util.Objects;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
-public class People {
+import java.util.Objects;
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class People implements Cloneable{
     private int age;
     private String name;
     private String hobby;
