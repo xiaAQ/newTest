@@ -1,4 +1,4 @@
-package com.xiahaolei.ThreadMethod;
+package com.xiahaolei.Thread.ThreadMethod;
 
 public class ThreadB extends Thread{
         public ThreadB(String name) {

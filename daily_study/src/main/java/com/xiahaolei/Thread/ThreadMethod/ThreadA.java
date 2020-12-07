@@ -1,6 +1,7 @@
-package com.xiahaolei.ThreadMethod;
+package com.xiahaolei.Thread.ThreadMethod;
 
-public class ThreadA  extends Thread{
+public class
+ThreadA  extends Thread{
     public ThreadA(String name) {
         super(name);
     }

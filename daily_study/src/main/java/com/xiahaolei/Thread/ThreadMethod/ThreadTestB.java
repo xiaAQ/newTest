@@ -1,4 +1,4 @@
-package com.xiahaolei.ThreadMethod;
+package com.xiahaolei.Thread.ThreadMethod;
 
 public class ThreadTestB {
         public static void main(String[] args) {
