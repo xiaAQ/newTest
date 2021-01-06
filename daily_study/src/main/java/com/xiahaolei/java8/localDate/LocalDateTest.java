@@ -67,6 +67,7 @@ public class LocalDateTest {
         LocalDate localDate2 = LocalDate.parse("2019-09-10", DateTimeFormatter.ISO_LOCAL_DATE);
         System.out.println(localDate1);
         System.out.println(localDate2);
+
     }
 
 

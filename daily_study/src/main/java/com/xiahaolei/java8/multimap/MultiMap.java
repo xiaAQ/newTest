@@ -2,6 +2,8 @@ package com.xiahaolei.java8.multimap;
 
 import com.google.common.collect.HashMultimap;
 
+import java.util.Set;
+
 /**
  * @author xiaQ
  * @version 1.0
@@ -26,6 +28,7 @@ public class MultiMap {
         map.put(4, 2);
         map.put(4, 3);
         System.out.println(map.toString());
-
+        Set<Integer> integers = map.get(1);
+        System.out.println(integers);
     }
 }
