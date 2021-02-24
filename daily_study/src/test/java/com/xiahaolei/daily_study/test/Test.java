@@ -1,14 +1,16 @@
 package com.xiahaolei.daily_study.test;
 
-import com.xiahaolei.java8.stream.sorted.Person;
+import org.apache.commons.lang3.StringUtils;
 
 import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Arrays;
-import java.util.Date;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 public class Test {
-    public static void main(String[] args) throws ParseException {
+    public static void main(String[] args) {
+        Set<String> set = new HashSet<>();
+        set.add("a");
+        set.add("b");
+        System.out.println(StringUtils.join(set.toArray(), ","));
     }
 }
