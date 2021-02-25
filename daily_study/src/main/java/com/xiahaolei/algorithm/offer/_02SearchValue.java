@@ -1,5 +1,8 @@
 package com.xiahaolei.algorithm.offer;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * @author xiaQ
  * @version 1.0
@@ -9,11 +12,9 @@ package com.xiahaolei.algorithm.offer;
  */
 public class _02SearchValue {
     public static void main(String[] args) {
-//        int [][] arr=new int[][]{{1,2,3,4},{5,6，7，8},{9，10，11，12}};
-//        System.out.println(arr.length);//输出行数
-//        System.out.println(arr[0].length);//输出列数
-//        System.out.println(arr[2][3]);
-
+        int[][] arr = new int[][]{{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}};
+        boolean value = findValue(arr, 10);
+        System.out.println(value);
     }
 
     //解法1. 遍历
@@ -21,12 +22,26 @@ public class _02SearchValue {
         if (array == null || array.length == 0) {
             return false;
         }
-        int row =0;  //行的开始
-        int column = array[0].length-1;//列的长度
-
-        return true;
+        //行
+        int row = 0;
+        //列
+        int column = array[0].length - 1;
+        while (row < array.length && column >= 0) {
+            if (array[row][column] == target) {
+                return true;
+            }
+            if (array[row][column] > target) {
+                column--;
+            } else {
+                row++;
+            }
+        }
+        return false;
     }
 
     //解法2：二分法
+    public static boolean division(int[][] array, int target) {
+        return true;
+    }
 
 }
