@@ -1,5 +1,8 @@
 package com.xiahaolei.algorithm.leecode;
 
+import java.util.*;
+import java.util.stream.Collectors;
+
 public class _02_add两数相加 {
     /**
      * 给出两个 非空 的链表用来表示两个非负的整数。其中，它们各自的位数是按照 逆序 的方式存储的，并且它们的每个节点只能存储 一位 数字。
@@ -12,5 +15,11 @@ public class _02_add两数相加 {
      * 链接：https://leetcode-cn.com/problems/add-two-numbers
      */
     public static void main(String[] args) {
+        Integer[] array = {1, 2, 3, 4, 6, 7, 9,null};
+        List<Integer> resultList= new ArrayList<>(Arrays.asList(array));
+        Map<Boolean, List<Integer>> collect = resultList.stream().collect(Collectors.groupingBy(e -> Objects.equals(null,e)));
+        List<Integer> integers = collect.get(false);
+        System.out.println(integers);
+        System.out.println(collect);
     }
 }
