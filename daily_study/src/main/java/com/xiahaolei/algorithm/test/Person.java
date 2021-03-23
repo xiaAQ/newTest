@@ -1,9 +1,12 @@
 package com.xiahaolei.algorithm.test;
 
+import com.alibaba.fastjson.annotation.JSONField;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+import java.util.Date;
 
 /**
  * @author xiaQ
@@ -14,7 +17,9 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class TestPerson {
+public class Person {
     private String name;
     private Integer age;
+    @JSONField(format = "yyyy-MM-dd")
+    private Date birthday;
 }

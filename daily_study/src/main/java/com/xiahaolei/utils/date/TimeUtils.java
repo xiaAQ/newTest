@@ -12,8 +12,6 @@ public class TimeUtils {
         time = DateUtils.setSeconds(time, 0);
         time = DateUtils.setMilliseconds(time, 0);
         System.out.println(time);
-
-
         Date startTime = DateUtils.addDays(time, -1);
         System.out.println(startTime);
 

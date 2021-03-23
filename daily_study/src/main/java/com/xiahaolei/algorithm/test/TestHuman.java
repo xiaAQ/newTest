@@ -5,6 +5,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.Date;
+
 /**
  * @author xiaQ
  * @version 1.0
@@ -19,4 +21,5 @@ public class TestHuman {
     private Integer age;
     private String hobby;
     private String sex;
+    private Date birthday;
 }

@@ -18,7 +18,7 @@ public class HuoolExcelUtil {
 
         List<List<String>> rows = CollUtil.newArrayList(row1, row2, row3, row4, row5);
         //通过构造方法创建writer//ExcelWriter writer = new ExcelWriter("d:/writeTest.xls");
-        ExcelWriter writer = ExcelUtil.getWriter("d:/writeTest.xlsx");
+        ExcelWriter writer = ExcelUtil.getWriter("writeTest.xlsx");
         //跳过当前行，既第一行，非必须，在此演示用
         writer.passCurrentRow();
         //合并单元格后的标题行，使用默认标题样式
